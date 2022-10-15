@@ -1,5 +1,9 @@
-int main() {
+#include <WinUser.h>
 
+int main() {
+    while(true) {
+        
+    }
     
     return 0;
 }
