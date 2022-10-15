@@ -6,9 +6,6 @@ using namespace std;
 double time_list[5] = {100, 200, 300, 400, 500};
 bool isEnabled = false;
 
-// keybd_event(0x14, 0, KEYEVENTF_EXTENDEDKEY, 0);
-// keybd_event(0x14, 0, KEYEVENTF_KEYUP, 0);
-
 int main() {
     
     while(true) {
