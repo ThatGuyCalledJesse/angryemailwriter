@@ -1,6 +1,5 @@
 #include <windows.h>
 #include <conio.h>
-#include <iostream>
 using namespace std;
 
 double time_list[5] = {100, 200, 300, 400, 500};
