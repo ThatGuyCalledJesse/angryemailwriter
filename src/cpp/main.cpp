@@ -8,7 +8,7 @@ bool isEnabled = false;
 int main() {
     
     while(true) {
-        int RandIndex = rand() % 4; //generates a random number between 0 and 3
+        int RandIndex = rand() % 5; //generates a random number between 0 and 4
         if (isEnabled == false) {
             keybd_event(0x14, 0, KEYEVENTF_EXTENDEDKEY, 0);
             isEnabled = true;
