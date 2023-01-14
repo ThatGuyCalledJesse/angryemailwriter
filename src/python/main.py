@@ -1,4 +1,5 @@
 import random
+import platform
 import win32com.client as comclt
 import time
 import os
@@ -13,7 +14,10 @@ for i in range(5):
 os.system("pip install pywin32")
 
 # The main part of the program
-while True:
-    wsh= comclt.Dispatch("WScript.Shell")
-    wsh.SendKeys("{CAPSLOCK}") 
-    time.sleep(random.choice(times_list))
+if not 'Linux' in platform.platform():
+    while True:
+        wsh= comclt.Dispatch("WScript.Shell")
+        wsh.SendKeys("{CAPSLOCK}") 
+        time.sleep(random.choice(times_list))
+else:
+    print('There currently is no support for Linux, sorry!')
